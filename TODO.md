@@ -12,6 +12,7 @@
 ## Neural Nets
 
 * [Deep Double Descent: Where Bigger Models and More Data Hurt](https://arxiv.org/abs/1912.02292)
+* Explore implementing XOR in a small NN with linearity and nonlinearity
 
 ## Neuroscience
 
@@ -31,3 +32,4 @@
 * [Strang Lecture 8: Solving Ax = b: Row Reduced Form R](https://www.youtube.com/watch?v=9Q1q7s1jTzU)
 * [Strang Lecture 9: Independence, Basis and Dimension](https://www.youtube.com/watch?v=yjBerM5jWsc)
 * [Strang Lecture 10: The Four Fundamental Subspaces](https://www.youtube.com/watch?v=nHlE7EgJFds)
+* [3.1 Matrix Transformations](https://textbooks.math.gatech.edu/ila/matrix-transformations.html)

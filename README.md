@@ -14,10 +14,21 @@ cognitive architectures, AI, and related topics.
 
 ## Reading Group
 
-### Meeting 7 (TBD)
-
+### Ongoing
 * [The free-energy principle: a unified brain theory?](https://www.fil.ion.ucl.ac.uk/~karl/The%20free-energy%20principle%20A%20unified%20brain%20theory.pdf)
-* [A tutorial on the free-energy framework for modelling perception and learning](https://www.sciencedirect.com/science/article/pii/S0022249615000759#bbr000050)
+
+### Meeting 9 (Monday, April 20, 2020 ?)
+
+* [A tutorial on the free-energy framework for modelling perception and learning](https://www.sciencedirect.com/science/article/pii/S0022249615000759#bbr000050): exercise 3
+* [3.1 Matrix Transformations](https://textbooks.math.gatech.edu/ila/matrix-transformations.html)
+* [Strang Lecture 8: Solving Ax = b: Row Reduced Form R](https://www.youtube.com/watch?v=9Q1q7s1jTzU)
+
+### Meeting 8 (Friday, April 17, 2020)
+
+* [A tutorial on the free-energy framework for modelling perception and learning](https://www.sciencedirect.com/science/article/pii/S0022249615000759#bbr000050): exercise 1 and 2
+
+### Meeting 7 (Thursday, April 16, 2020)
+
 * [Strang Lecture 7: Solving Ax = 0: Pivot Variables, Special Solutions](https://www.youtube.com/watch?v=VqP2tREMvt0)
 
 ### Meeting 6 (Saturday, April 11, 2020)
@@ -59,3 +70,4 @@ cognitive architectures, AI, and related topics.
 ## Resources
 
 * [Strang's Linear Algebra](https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/resource-index/)
+* [Github Texify app](https://stackoverflow.com/a/53981118)

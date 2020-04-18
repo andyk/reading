@@ -1,9 +1,17 @@
 ## [Strang Lecture 7: Solving Ax = 0: Pivot Variables, Special Solutions](https://www.youtube.com/watch?v=VqP2tREMvt0)
 ## Gilbert Strang
 
-* Use elimination to solve a <img src="/tex/5b4cf7163dd6f95ba26235a3efa57ac2.svg?invert_in_darkmode&sanitize=true" align=middle width=36.52961069999999pt height=21.18721440000001pt/> rectangular matrix (<img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/>):
+* Use elimination to solve a $3 \times 4$ rectangular matrix ($A$):
 
-<p align="center"><img src="/tex/bebe32224cc9eb809d4cdde8d74f24ac.svg?invert_in_darkmode&sanitize=true" align=middle width=128.76731835pt height=59.1786591pt/></p>
+$$
+    \begin{bmatrix}
+        \begin{array}{rrrr}
+            1 & 2 & 2 &  2 \\
+            2 & 4 & 6 &  8 \\
+            3 & 6 & 8 & 10 \\
+        \end{array}
+    \end{bmatrix}
+$$
 
 * During elimination:
     * Nullspace does not change
@@ -11,69 +19,118 @@
     * Columnspace **IS** changing
     * Rowspace does not change (not explicitly mentioned, but assume so)
 
-* Result of elimination (<img src="/tex/6bac6ec50c01592407695ef84f457232.svg?invert_in_darkmode&sanitize=true" align=middle width=13.01596064999999pt height=22.465723500000017pt/>):
+* Result of elimination ($U$):
 
-<p align="center"><img src="/tex/45a25ec04e9bb57f0e505f6908eb87ef.svg?invert_in_darkmode&sanitize=true" align=middle width=120.5481156pt height=59.1786591pt/></p>
+$$
+    \begin{bmatrix}
+        \begin{array}{rrrr}
+            1 & 2 & 2 & 2 \\
+            0 & 0 & 2 & 4 \\
+            0 & 0 & 0 & 0 \\
+        \end{array}
+    \end{bmatrix}
+$$
 
 
 * No pivot in second column means it's free (a combo of other columns)
 
 * 2 total pivots; they are 1 at (1,1) and 2 at (2,3)
 
-* The result of elimination is in upper echelon form (<img src="/tex/6bac6ec50c01592407695ef84f457232.svg?invert_in_darkmode&sanitize=true" align=middle width=13.01596064999999pt height=22.465723500000017pt/>)
+* The result of elimination is in upper echelon form ($U$)
 
 * Rank of matrix == pivots == 2 in this example.
 
-* You can solve <img src="/tex/2fe657088322d47b689cd44cc71ccd05.svg?invert_in_darkmode&sanitize=true" align=middle width=52.54776779999999pt height=22.465723500000017pt/>, same solutions as <img src="/tex/2b71965bdc17323260ed22a8cc29538d.svg?invert_in_darkmode&sanitize=true" align=middle width=51.86062694999999pt height=22.465723500000017pt/>
+* You can solve $Ux=0$, same solutions as $Ax=0$
 
 * 2 pivot columns, 2 free columns
 
 * You can assign any number to the free columns and then solve the equations
   for the pivots columns.
 
-* Assign <img src="/tex/56139c2ecb22056c1ab58d6e6fc736a1.svg?invert_in_darkmode&sanitize=true" align=middle width=46.90628744999999pt height=21.18721440000001pt/> and <img src="/tex/face1f7a70bce3be1526cc862d0b9567.svg?invert_in_darkmode&sanitize=true" align=middle width=46.90628744999999pt height=21.18721440000001pt/> to the free variables and solve for <img src="/tex/277fbbae7d4bc65b6aa601ea481bebcc.svg?invert_in_darkmode&sanitize=true" align=middle width=15.94753544999999pt height=14.15524440000002pt/> and
-  <img src="/tex/2c52641cc5fa73cbbdf887c89d82f0de.svg?invert_in_darkmode&sanitize=true" align=middle width=15.94753544999999pt height=14.15524440000002pt/>.  Note <img src="/tex/9ff44075699a748a2691b4dabf6780eb.svg?invert_in_darkmode&sanitize=true" align=middle width=59.69172164999999pt height=21.18721440000001pt/> and <img src="/tex/1412bdb3a4c77853bafc5e9e1b7150e5.svg?invert_in_darkmode&sanitize=true" align=middle width=46.90628744999999pt height=21.18721440000001pt/> after back subbing.  This is a vector in
+* Assign $x_2 = 1$ and $x_4 = 0$ to the free variables and solve for $x_1$ and
+  $x_3$.  Note $x_1=-2$ and $x_3=0$ after back subbing.  This is a vector in
   the nullspace and any multiple of it is in the nullspace.
 
 * You have two free variables, so you need another vector in the nullspace.
-  Now Assign <img src="/tex/3b556ebecf31f20220e296e4687393a3.svg?invert_in_darkmode&sanitize=true" align=middle width=46.90628744999999pt height=21.18721440000001pt/> and <img src="/tex/fb6f7317d69927ab9949587450b52cd8.svg?invert_in_darkmode&sanitize=true" align=middle width=46.90628744999999pt height=21.18721440000001pt/> to the free variables and solve for <img src="/tex/277fbbae7d4bc65b6aa601ea481bebcc.svg?invert_in_darkmode&sanitize=true" align=middle width=15.94753544999999pt height=14.15524440000002pt/>
-  and <img src="/tex/2c52641cc5fa73cbbdf887c89d82f0de.svg?invert_in_darkmode&sanitize=true" align=middle width=15.94753544999999pt height=14.15524440000002pt/>.  Note <img src="/tex/bda947926e3a56a7e1f79bf2d7d9c985.svg?invert_in_darkmode&sanitize=true" align=middle width=46.90628744999999pt height=21.18721440000001pt/> and <img src="/tex/6815dc5c67a03ae13e30eb0b4a95d2c7.svg?invert_in_darkmode&sanitize=true" align=middle width=59.69172164999999pt height=21.18721440000001pt/> after back subbing.  This is anonter
+  Now Assign $x_2 = 0$ and $x_4 = 1$ to the free variables and solve for $x_1$
+  and $x_3$.  Note $x_1=2$ and $x_3=-2$ after back subbing.  This is anonter
   vector in the nullspace and any multiple of it is in the nullspace.
 
 * Any linear combination of those two vectors are in the nullspace.  You'll get
   one vector in the nullspace for each free column.
 
 
-<p align="center"><img src="/tex/3ad9826765c086ec4a1bc169dc595cd6.svg?invert_in_darkmode&sanitize=true" align=middle width=315.03822405pt height=78.9048876pt/></p>
+$$
+nullspace(A) = 
+    c_1 * \begin{bmatrix}
+            \begin{array}{r}
+                -2 \\
+                 1 \\ 
+                 0 \\ 
+                 0 \\ 
+            \end{array}
+          \end{bmatrix} 
+    + 
+    c_2 * \begin{bmatrix}
+            \begin{array}{r}
+                 2 \\
+                 0 \\
+                -2 \\ 
+                 1 \\
+            \end{array}
+          \end{bmatrix}
+$$
 
-* Rank is equal to the pivot variable count.  Free variables is <img src="/tex/f7ac410dd4413138a6d3f58028ae8c58.svg?invert_in_darkmode&sanitize=true" align=middle width=42.566541599999994pt height=22.465723500000017pt/> for an
-  <img src="/tex/205995f88b807b2f5268f7ef4053f049.svg?invert_in_darkmode&sanitize=true" align=middle width=44.39116769999999pt height=19.1781018pt/> matrix.
+* Rank is equal to the pivot variable count.  Free variables is $n-R$ for an
+  $m \times n$ matrix.
 
 * Finding the nullspace: Do elimination.  Set each free variable to one (and
   others to zero) and solve for a vector in the nullspace.
 
-* Matrix <img src="/tex/1e438235ef9ec72fc51ac5025516017c.svg?invert_in_darkmode&sanitize=true" align=middle width=12.60847334999999pt height=22.465723500000017pt/> is the reduced row echelon form (rref).  Use the pivots to clean
-  up the rows above them and make pivots equal to 1. <img src="/tex/1e438235ef9ec72fc51ac5025516017c.svg?invert_in_darkmode&sanitize=true" align=middle width=12.60847334999999pt height=22.465723500000017pt/> for our above example
+* Matrix $R$ is the reduced row echelon form (rref).  Use the pivots to clean
+  up the rows above them and make pivots equal to 1. $R$ for our above example
   is:
 
-<p align="center"><img src="/tex/7959c9d92984071c0784524172664d9f.svg?invert_in_darkmode&sanitize=true" align=middle width=133.33354319999998pt height=59.1786591pt/></p>
+$$
+    \begin{bmatrix}
+        \begin{array}{rrrr}
+            1 & 2 & 0 & -2 \\
+            0 & 0 & 1 & 2 \\
+            0 & 0 & 0 & 0 \\
+        \end{array}
+    \end{bmatrix}
+$$
 
-* Note the identity matrix <img src="/tex/21fd4e8eecd6bdf1a4d3d6bd1fb8d733.svg?invert_in_darkmode&sanitize=true" align=middle width=8.515988249999989pt height=22.465723500000017pt/> is mixed into the rref matrix <img src="/tex/1e438235ef9ec72fc51ac5025516017c.svg?invert_in_darkmode&sanitize=true" align=middle width=12.60847334999999pt height=22.465723500000017pt/>.
+* Note the identity matrix $I$ is mixed into the rref matrix $R$.
 
 * Typical rref looks like (I is identity matrix, F is free variables, the
-  columns from I and F may be intermixed, <img src="/tex/89f2e0d2d24bcf44db73aab8fc03252c.svg?invert_in_darkmode&sanitize=true" align=middle width=7.87295519999999pt height=14.15524440000002pt/> pivot rows AND columns, <img src="/tex/6705abc37a8daba2b601e9e9771af618.svg?invert_in_darkmode&sanitize=true" align=middle width=42.397246649999985pt height=19.1781018pt/>
-  free rows, <img src="/tex/bdc4fe24ac8ca702834e1744502f09d9.svg?invert_in_darkmode&sanitize=true" align=middle width=37.83102344999999pt height=19.1781018pt/> free columns):
+  columns from I and F may be intermixed, $r$ pivot rows AND columns, $m-r$
+  free rows, $n-r$ free columns):
 
-<p align="center"><img src="/tex/d344e8c92f231360ad6f867c8d6a6fb3.svg?invert_in_darkmode&sanitize=true" align=middle width=71.5982586pt height=39.452455349999994pt/></p>
+$$ 
+    \begin{bmatrix}
+        \begin{array}{rr}
+            I & F \\
+            0 & 0 \\
+        \end{array}
+    \end{bmatrix}
+$$
 
-* Nullspace matrix (<img src="/tex/f9c4988898e7f532b9f826a75014ed3c.svg?invert_in_darkmode&sanitize=true" align=middle width=14.99998994999999pt height=22.465723500000017pt/>) - columns are the special solutions. <img src="/tex/942733788955d96b64cf2a3ee7984e69.svg?invert_in_darkmode&sanitize=true" align=middle width=57.74527934999999pt height=22.465723500000017pt/>.
+* Nullspace matrix ($N$) - columns are the special solutions. $RN=0$.
 
-<p align="center"><img src="/tex/26178984e148855d298b2eb3ed05b9c0.svg?invert_in_darkmode&sanitize=true" align=middle width=96.3469683pt height=39.452455349999994pt/></p>
+$$ 
+    N = \begin{bmatrix}
+            \begin{array}{rr}
+                -F \\
+                 I \\
+            \end{array}
+        \end{bmatrix}
+$$
 
-* I find this part of the lecture confusing.  He is composing matrices (<img src="/tex/b8bc815b5e9d5177af01fd4d3d3c2f10.svg?invert_in_darkmode&sanitize=true" align=middle width=12.85392569999999pt height=22.465723500000017pt/> and
-  <img src="/tex/21fd4e8eecd6bdf1a4d3d6bd1fb8d733.svg?invert_in_darkmode&sanitize=true" align=middle width=8.515988249999989pt height=22.465723500000017pt/>) that don't quite correspond to the example.
+* I find this part of the lecture confusing.  He is composing matrices ($F$ and
+  $I$) that don't quite correspond to the example.
 
-* Rank of <img src="/tex/99f7812af37ee7004df7177a1e821ec5.svg?invert_in_darkmode&sanitize=true" align=middle width=21.86251649999999pt height=27.6567522pt/> is the same as <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/>.  <img src="/tex/f14f60eb1a566660335ef95423c1d84f.svg?invert_in_darkmode&sanitize=true" align=middle width=50.469792449999986pt height=27.6567522pt/> is dimension 1 in our example.
+* Rank of $A^T$ is the same as $A$.  $N(A^T)$ is dimension 1 in our example.
 
 ## [A tutorial on the free-energy framework for modelling perception and learning](https://www.sciencedirect.com/science/article/pii/S0022249615000759#bbr000050)
 ### Rafal Bogacz
