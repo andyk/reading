@@ -17,7 +17,15 @@ cognitive architectures, AI, and related topics.
 ### Ongoing
 * [The free-energy principle: a unified brain theory?](https://www.fil.ion.ucl.ac.uk/~karl/The%20free-energy%20principle%20A%20unified%20brain%20theory.pdf)
 
-### Meeting 9 (Monday, April 20, 2020 ?)
+### Meeting 10 (Wednesday, April 22, 2020)
+
+* Figure out where the dynamical eqns from exercise 3 come from.
+* Finish section 2 in tutorial.
+* [Strang Lecture 9: Independence, Basis and Dimension](https://www.youtube.com/watch?v=yjBerM5jWsc)
+* Discuss what more applied engineering here looks like.
+
+
+### Meeting 9 (Monday, April 20, 2020)
 
 * [A tutorial on the free-energy framework for modelling perception and learning](https://www.sciencedirect.com/science/article/pii/S0022249615000759#bbr000050): exercise 3
 * [3.1 Matrix Transformations](https://textbooks.math.gatech.edu/ila/matrix-transformations.html)

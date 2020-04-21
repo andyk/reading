@@ -16,6 +16,8 @@
 
 ## Neuroscience
 
+* [Learning and inference in the brain](https://www.fil.ion.ucl.ac.uk/~karl/Learning%20and%20inference%20in%20the%20brain.pdf)
+
 
 ## Video
 
@@ -29,7 +31,5 @@
 
 ## Linear Algebra
 
-* [Strang Lecture 8: Solving Ax = b: Row Reduced Form R](https://www.youtube.com/watch?v=9Q1q7s1jTzU)
-* [Strang Lecture 9: Independence, Basis and Dimension](https://www.youtube.com/watch?v=yjBerM5jWsc)
 * [Strang Lecture 10: The Four Fundamental Subspaces](https://www.youtube.com/watch?v=nHlE7EgJFds)
 * [3.1 Matrix Transformations](https://textbooks.math.gatech.edu/ila/matrix-transformations.html)

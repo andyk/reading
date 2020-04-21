@@ -1,5 +1,67 @@
+## [Strang Lecture 8: Solving Ax = b: Row Reduced Form R](https://www.youtube.com/watch?v=9Q1q7s1jTzU)
+### Gilbert Strang
+
+* We'll reuse our example matrix to explore <img src="/tex/6ffa573707fca115cad7b243d91a7109.svg?invert_in_darkmode&sanitize=true" align=middle width=50.69621369999999pt height=22.831056599999986pt/>:
+
+<p align="center"><img src="/tex/695d6dcfed1fa253519b8dd53016e86e.svg?invert_in_darkmode&sanitize=true" align=middle width=187.03206225pt height=59.1786591pt/></p>
+
+* Let's use an augmented matrix to deal with the right hand side and do
+  elimination:
+
+<p align="center"><img src="/tex/4545a8ad84c6167498141eb954e12ead.svg?invert_in_darkmode&sanitize=true" align=middle width=159.6349128pt height=59.1786591pt/></p>
+
+* End up with, the condition for a solution is <img src="/tex/225d150b596970a35004bd81427462a5.svg?invert_in_darkmode&sanitize=true" align=middle width=125.57051265pt height=22.831056599999986pt/>
+  (e.g. <img src="/tex/5f5355935f9d9f19d9ddc9f2bf9b91fc.svg?invert_in_darkmode&sanitize=true" align=middle width=81.02725454999998pt height=24.65753399999998pt/>):
+
+<p align="center"><img src="/tex/4b4a6ca02aaa1b4fddf64e514525d8e0.svg?invert_in_darkmode&sanitize=true" align=middle width=233.24198205pt height=59.1786591pt/></p>
+
+* Solvability: a condition on <img src="/tex/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode&sanitize=true" align=middle width=7.054796099999991pt height=22.831056599999986pt/>.  <img src="/tex/6ffa573707fca115cad7b243d91a7109.svg?invert_in_darkmode&sanitize=true" align=middle width=50.69621369999999pt height=22.831056599999986pt/> is solvable when <img src="/tex/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode&sanitize=true" align=middle width=7.054796099999991pt height=22.831056599999986pt/> is in the
+  columnspace of <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/>, <img src="/tex/34e5f1f13b2812eee1b9520c4affa446.svg?invert_in_darkmode&sanitize=true" align=middle width=38.038868999999984pt height=24.65753399999998pt/>. Alternatively, if a combination of the rows of
+  <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/> give the zero row, then the same combination of the components of <img src="/tex/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode&sanitize=true" align=middle width=7.054796099999991pt height=22.831056599999986pt/>
+  have to give a zero.
+
+* To find complete solution to <img src="/tex/6ffa573707fca115cad7b243d91a7109.svg?invert_in_darkmode&sanitize=true" align=middle width=50.69621369999999pt height=22.831056599999986pt/>:
+
+  * Find a particular solution. One way to find a particular solution: set all
+    free variables to zero and then solve for pivot variables.
+
+  <p align="center"><img src="/tex/43d8a479203a8cb80758dbd37bae51e1.svg?invert_in_darkmode&sanitize=true" align=middle width=98.27185829999999pt height=78.9048876pt/></p>
+
+  * Add in the nullspace <img src="/tex/d7084ce258ffe96f77e4f3647b250bbf.svg?invert_in_darkmode&sanitize=true" align=middle width=17.521011749999992pt height=14.15524440000002pt/> (aka special solutions).
+
+* The complete solution to <img src="/tex/6ffa573707fca115cad7b243d91a7109.svg?invert_in_darkmode&sanitize=true" align=middle width=50.69621369999999pt height=22.831056599999986pt/> is <img src="/tex/2bc7a0501b098605f46d03e2abb36260.svg?invert_in_darkmode&sanitize=true" align=middle width=139.20797055pt height=19.1781018pt/>
+
+<p align="center"><img src="/tex/276344100dbd931ddd3dea5278002148.svg?invert_in_darkmode&sanitize=true" align=middle width=362.17469475pt height=78.9048876pt/></p>
+
+* Note <img src="/tex/ca2029a5cbe6fc73d2db721fec0638df.svg?invert_in_darkmode&sanitize=true" align=middle width=419.93166765pt height=24.65753399999998pt/>.
+
+* <img src="/tex/773dc52501a09d3dc40596571a2321dd.svg?invert_in_darkmode&sanitize=true" align=middle width=15.26963954999999pt height=14.15524440000002pt/> in this case is a subspace (the nullspace) shifted by the
+  <img src="/tex/0957a9bbf01d2ea5f621f1d068d404d9.svg?invert_in_darkmode&sanitize=true" align=middle width=16.17146519999999pt height=14.15524440000002pt/>.  Instead of going through zero, the subspace goes through
+  <img src="/tex/0957a9bbf01d2ea5f621f1d068d404d9.svg?invert_in_darkmode&sanitize=true" align=middle width=16.17146519999999pt height=14.15524440000002pt/>.
+
+* Relations between rank <img src="/tex/89f2e0d2d24bcf44db73aab8fc03252c.svg?invert_in_darkmode&sanitize=true" align=middle width=7.87295519999999pt height=14.15524440000002pt/> in a <img src="/tex/205995f88b807b2f5268f7ef4053f049.svg?invert_in_darkmode&sanitize=true" align=middle width=44.39116769999999pt height=19.1781018pt/> matrix:
+
+  * <img src="/tex/9dad75ceef24a34ae5a4707a7d1571d5.svg?invert_in_darkmode&sanitize=true" align=middle width=44.22368609999999pt height=20.908638300000003pt/>
+  * <img src="/tex/e5a277555371ce571a0d3f06d3ad7ed7.svg?invert_in_darkmode&sanitize=true" align=middle width=39.65746289999999pt height=20.908638300000003pt/>
+
+* Full column rank <img src="/tex/e6b88fbaec17edf03d3fd1adf98db331.svg?invert_in_darkmode&sanitize=true" align=middle width=39.65746289999999pt height=14.15524440000002pt/>: no free variables, nullspace is only the zero
+  vector, one or zero solutions to <img src="/tex/6ffa573707fca115cad7b243d91a7109.svg?invert_in_darkmode&sanitize=true" align=middle width=50.69621369999999pt height=22.831056599999986pt/>.  Matrix will look tall and thin.
+  Each zero row will be an additional condition on <img src="/tex/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode&sanitize=true" align=middle width=7.054796099999991pt height=22.831056599999986pt/>.
+
+* Full row rank <img src="/tex/972a93691ff5ceb688f5e875b61f528d.svg?invert_in_darkmode&sanitize=true" align=middle width=44.22368609999999pt height=14.15524440000002pt/>: One or many solutions for every <img src="/tex/4bdc8d9bcfb35e1c9bfb51fc69687dfc.svg?invert_in_darkmode&sanitize=true" align=middle width=7.054796099999991pt height=22.831056599999986pt/> (depending if
+  there are free variables.  There will be <img src="/tex/48d45f061bd81cbb30840cc309e2b25b.svg?invert_in_darkmode&sanitize=true" align=middle width=104.13982095pt height=19.1781018pt/> free variables). Matrix
+  will be short and fat.  <img src="/tex/079bfec7814e7f4bcbae5a5e2830bb51.svg?invert_in_darkmode&sanitize=true" align=middle width=46.21760714999999pt height=17.723762100000005pt/> results in free variables.
+
+* Full row and column rank <img src="/tex/c6578e573264528b0d6927ee0c7a1176.svg?invert_in_darkmode&sanitize=true" align=middle width=76.00819379999999pt height=14.15524440000002pt/>.  Square matrix and invertible, one
+  solution for every b. Row reduced echelon form is the identity matrix.
+
+* If <img src="/tex/d65635677d427f79f5afec59fb1e8022.svg?invert_in_darkmode&sanitize=true" align=middle width=44.22368609999999pt height=17.723762100000005pt/> and <img src="/tex/797f7e1e586399c71e8b56b04c7af670.svg?invert_in_darkmode&sanitize=true" align=middle width=39.65746289999999pt height=17.723762100000005pt/>, then you will have 0 solutions (if the conditions of
+  the zero row are not satisifed) or infinite solutions if the conditions of
+  the zero row are satisfied.
+
+
 ## [Strang Lecture 7: Solving Ax = 0: Pivot Variables, Special Solutions](https://www.youtube.com/watch?v=VqP2tREMvt0)
-## Gilbert Strang
+### Gilbert Strang
 
 * Use elimination to solve a <img src="/tex/5b4cf7163dd6f95ba26235a3efa57ac2.svg?invert_in_darkmode&sanitize=true" align=middle width=36.52961069999999pt height=21.18721440000001pt/> rectangular matrix (<img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/>):
 
@@ -44,7 +106,7 @@
   one vector in the nullspace for each free column.
 
 
-<p align="center"><img src="/tex/3ad9826765c086ec4a1bc169dc595cd6.svg?invert_in_darkmode&sanitize=true" align=middle width=315.03822405pt height=78.9048876pt/></p>
+<p align="center"><img src="/tex/f49c3fd306ccbf36ab5d041a67f507e3.svg?invert_in_darkmode&sanitize=true" align=middle width=315.03822405pt height=78.9048876pt/></p>
 
 * Rank is equal to the pivot variable count.  Free variables is <img src="/tex/f7ac410dd4413138a6d3f58028ae8c58.svg?invert_in_darkmode&sanitize=true" align=middle width=42.566541599999994pt height=22.465723500000017pt/> for an
   <img src="/tex/205995f88b807b2f5268f7ef4053f049.svg?invert_in_darkmode&sanitize=true" align=middle width=44.39116769999999pt height=19.1781018pt/> matrix.
@@ -64,11 +126,11 @@
   columns from I and F may be intermixed, <img src="/tex/89f2e0d2d24bcf44db73aab8fc03252c.svg?invert_in_darkmode&sanitize=true" align=middle width=7.87295519999999pt height=14.15524440000002pt/> pivot rows AND columns, <img src="/tex/6705abc37a8daba2b601e9e9771af618.svg?invert_in_darkmode&sanitize=true" align=middle width=42.397246649999985pt height=19.1781018pt/>
   free rows, <img src="/tex/bdc4fe24ac8ca702834e1744502f09d9.svg?invert_in_darkmode&sanitize=true" align=middle width=37.83102344999999pt height=19.1781018pt/> free columns):
 
-<p align="center"><img src="/tex/d344e8c92f231360ad6f867c8d6a6fb3.svg?invert_in_darkmode&sanitize=true" align=middle width=71.5982586pt height=39.452455349999994pt/></p>
+<p align="center"><img src="/tex/10382425eb948366c69148d1b0ecdfac.svg?invert_in_darkmode&sanitize=true" align=middle width=71.5982586pt height=39.452455349999994pt/></p>
 
 * Nullspace matrix (<img src="/tex/f9c4988898e7f532b9f826a75014ed3c.svg?invert_in_darkmode&sanitize=true" align=middle width=14.99998994999999pt height=22.465723500000017pt/>) - columns are the special solutions. <img src="/tex/942733788955d96b64cf2a3ee7984e69.svg?invert_in_darkmode&sanitize=true" align=middle width=57.74527934999999pt height=22.465723500000017pt/>.
 
-<p align="center"><img src="/tex/26178984e148855d298b2eb3ed05b9c0.svg?invert_in_darkmode&sanitize=true" align=middle width=96.3469683pt height=39.452455349999994pt/></p>
+<p align="center"><img src="/tex/c3408736ad0e11f3506d57d5defff14d.svg?invert_in_darkmode&sanitize=true" align=middle width=96.3469683pt height=39.452455349999994pt/></p>
 
 * I find this part of the lecture confusing.  He is composing matrices (<img src="/tex/b8bc815b5e9d5177af01fd4d3d3c2f10.svg?invert_in_darkmode&sanitize=true" align=middle width=12.85392569999999pt height=22.465723500000017pt/> and
   <img src="/tex/21fd4e8eecd6bdf1a4d3d6bd1fb8d733.svg?invert_in_darkmode&sanitize=true" align=middle width=8.515988249999989pt height=22.465723500000017pt/>) that don't quite correspond to the example.
