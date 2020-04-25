@@ -1,3 +1,49 @@
+## [Strang Lecture 9: Independence, Basis and Dimension](https://www.youtube.com/watch?v=yjBerM5jWsc)
+### Gilbert Strang
+
+* Suppose <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/> is an <img src="/tex/205995f88b807b2f5268f7ef4053f049.svg?invert_in_darkmode&sanitize=true" align=middle width=44.39116769999999pt height=19.1781018pt/> matrix with <img src="/tex/ffef4f323b92402b2f3599acad545fc2.svg?invert_in_darkmode&sanitize=true" align=middle width=46.21760714999999pt height=17.723762100000005pt/> (more unknowns than
+  equations).  Then there are nonzero solutions to <img src="/tex/2b71965bdc17323260ed22a8cc29538d.svg?invert_in_darkmode&sanitize=true" align=middle width=51.86062694999999pt height=22.465723500000017pt/> (there is something
+  besides the zero vector in the nullspace of <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/>).  There will be at least one
+  free variable.
+
+* Vectors <img src="/tex/4a763fc825d9ff2a2c3fc0e796f97fea.svg?invert_in_darkmode&sanitize=true" align=middle width=89.74700459999998pt height=14.15524440000002pt/> are **independent** if the only linear
+  combination of those vectors that give the zero vector is all zeros.
+
+* If the zero vector is in the set, then the set is always dependent.
+
+* 3 vectors in 2D space are dependent because there will be free variables.
+
+* When <img src="/tex/e5d37a40e17a9f823ccffea6bea3c34a.svg?invert_in_darkmode&sanitize=true" align=middle width=59.74705439999998pt height=14.15524440000002pt/> are the columns of <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/>, they are independent if the
+  nullspace of <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/> is only the zero vector.  They are dependent if <img src="/tex/afad16e925d155cfae4780fb9906a379.svg?invert_in_darkmode&sanitize=true" align=middle width=49.57944254999999pt height=22.465723500000017pt/> for
+  some nonzero <img src="/tex/3e18a4a28fdee1744e5e3f79d13b9ff6.svg?invert_in_darkmode&sanitize=true" align=middle width=7.11380504999999pt height=14.15524440000002pt/>.  In the independent case, the rank of <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/> is <img src="/tex/55a049b8f161ae7cfeb0197d75aff967.svg?invert_in_darkmode&sanitize=true" align=middle width=9.86687624999999pt height=14.15524440000002pt/>. In the
+  dependent case, the rank of <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/> is less than <img src="/tex/55a049b8f161ae7cfeb0197d75aff967.svg?invert_in_darkmode&sanitize=true" align=middle width=9.86687624999999pt height=14.15524440000002pt/>.
+
+* The columns of matrix <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/> (<img src="/tex/e5d37a40e17a9f823ccffea6bea3c34a.svg?invert_in_darkmode&sanitize=true" align=middle width=59.74705439999998pt height=14.15524440000002pt/>) **span** the columnspace of <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/>.
+  That is, the space consists of all combinations of those vectors.  They are
+  not necessarily independent.  However, we're generally interested in a set of
+  vectors that both span and space and are independent.  A spanning,
+  independent set (a **basis**) is "just right": you need all the vectors to
+  generate the space and none are redundant.
+
+* Example: a basis for <img src="/tex/88b8a2e57772e3be969c3fc12c2a7095.svg?invert_in_darkmode&sanitize=true" align=middle width=19.161017699999988pt height=26.76175259999998pt/> is <img src="/tex/d788d125bda3a57b95ad6b747fcb754b.svg?invert_in_darkmode&sanitize=true" align=middle width=170.77625069999996pt height=24.65753399999998pt/>.
+
+* Asking if the vectors composing a matrix are a basis is the same as asking if
+  the matrix is invertible.
+
+* A basis (e.g. for <img src="/tex/88b8a2e57772e3be969c3fc12c2a7095.svg?invert_in_darkmode&sanitize=true" align=middle width=19.161017699999988pt height=26.76175259999998pt/>) is not unique.  All basis for a space will have the
+  same number of vectors.  This number is the **dimension** of the space.
+
+* The (original) pivot columns are the columns you need for a basis of a space.
+
+* The rank of <img src="/tex/53d147e7f3fe6e47ee05b88b166bd3f6.svg?invert_in_darkmode&sanitize=true" align=middle width=12.32879834999999pt height=22.465723500000017pt/> (the number of pivot columns) is the dimension of the
+  columnspace.
+
+* <img src="/tex/753f1af03b020fb1f43f81229af029fe.svg?invert_in_darkmode&sanitize=true" align=middle width=83.55710879999998pt height=24.65753399999998pt/> and <img src="/tex/06d8f359ad5b10da879f08225b4e68ad.svg?invert_in_darkmode&sanitize=true" align=middle width=141.3005781pt height=24.65753399999998pt/> for <img src="/tex/205995f88b807b2f5268f7ef4053f049.svg?invert_in_darkmode&sanitize=true" align=middle width=44.39116769999999pt height=19.1781018pt/> matrix.
+
+
+
+
+
 ## [Strang Lecture 8: Solving Ax = b: Row Reduced Form R](https://www.youtube.com/watch?v=9Q1q7s1jTzU)
 ### Gilbert Strang
 
